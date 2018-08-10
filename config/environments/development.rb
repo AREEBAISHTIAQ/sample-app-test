@@ -34,7 +34,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
   host = 'example.com' # Don't use this literally; use your local dev host instead
-  config.action_mailer.default_url_options = { host: 'example.com' }
+  config.action_mailer.default_url_options = { host: 'junk-app.herokuapp.com' }
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
