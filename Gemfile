@@ -2,13 +2,15 @@ source 'https://rubygems.org'
 
 ruby '2.4.1'
 
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 5.2.0'
+gem 'bootstrap-sass', '3.3.7'
 gem 'rails', '~> 5.2.1'
 gem 'jquery-rails', '4.3.1'
 gem 'faker'
 gem 'jquery'
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
-
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -42,7 +44,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -71,5 +72,6 @@ group :production do
   gem 'fog', '1.42'
 end
 
+gem 'rails-controller-testing'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
