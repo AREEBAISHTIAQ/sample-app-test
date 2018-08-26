@@ -4,8 +4,6 @@ ruby '2.4.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
-gem 'bootstrap-sass', '3.3.7'
-gem 'rails', '~> 5.2.1'
 gem 'jquery-rails', '4.3.1'
 gem 'faker'
 gem 'jquery'
@@ -49,6 +47,7 @@ group :development, :test do
 end
 
 group :development do
+ gem 'bootstrap-sass', '3.3.7'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
